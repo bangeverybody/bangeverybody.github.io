@@ -1,0 +1,109 @@
+/*
+  palette: ;
+    rgb(250,166,255)
+    rgb(115,83,186)
+    rgb(47,25,95)
+    rgb(15,16,32)
+    rgb(239,195,245)
+*/
+
+:root{
+  --palette1: 193,223,240; /* lighter bg */
+  --palette2: 0,0,0; /* darker text */
+  --palette3: 36,110,121; /* dark text */
+  --palette4: 45,132,138; /* dark bg */
+  --palette5: 136,204,241; /* light bg */
+}
+
+body {
+  background-color: rgb(var(--palette1));
+  color:  rgb(var(--palette2));
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content {
+  padding: 8px;
+}
+
+h2{
+  color:  rgb(var(--palette3));
+}
+
+strong {
+  color: black;
+}
+
+.container{
+  background-color: rgb(var(--palette5));
+  margin-bottom: 64px;
+  border-radius: 0 0 64px 64px;
+  top:  0;
+}
+
+.footer{
+  position: fixed;
+  width: 100%;
+  background-color: rgb(var(--palette4));
+  color: rgb(var(--palette1));
+  left: 0;
+  bottom: 0;
+  padding: 4px;
+  font-size: 12px;
+  z-index: 99999999;
+}
+
+.footer a{
+  color: rgb(var(--palette5));
+}
+
+.pcard-img {
+    width: 274px;
+    height: 374px;
+    object-fit: cover;
+}
+
+.pcard-img:before {
+    content: ' ';
+    background-image: url(/img/game/ui/loading_card.png);
+}
+
+.pcard-holder {
+    width: 282px;
+    padding: 4px;
+    padding-bottom: 8px;
+    margin: 2px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.pcard-title {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.pcard-star {
+    width: 16px;
+    margin-left: -3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.pcard-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    margin: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.pcard-footer {
+    position: relative;
+    bottom: 0;
+    right: 3px;
+    font-size: 7px;
+}
